@@ -1,0 +1,164 @@
+
+/* 
+========
+ROOT CSS
+========
+*/
+
+:root {
+  --blue-color: #0a66c2;
+  --blue-hover-color: #004182;
+
+  /* text color */
+  --grey-light-color: rgba(0, 0, 0, 0.6);
+  --grey-dark-color: rgba(0, 0, 0, 0.75);
+  --grey-deep-dark-color: rgba(0, 0, 0, 0.9);
+  --brown-color: #b24020;
+  --brown-light-color: #8f5849;
+
+  /* background normal or hover colors */
+  --light-bluish-shade: #f3f2f0;
+  --light-purple-shade: #f1ece5;
+  --light-purple-darker-shade: #eae6df;
+
+  --light-on-hover-blue-shade: rgba(0, 0, 0, 0.4);
+
+  /* Font sizes */
+  --large-size: 56px;
+  --medium-size: 48px;
+  --x-medium-size: 40px;
+  --xs-medium-size: 32px;
+  --small-size: 20px;
+  --x-small-size: 16px;
+  --xs-small-size: 14px;
+  --xsl-small-size: 12px;
+
+  /* padding for button */
+  --btn-padding: 12px 24px;
+
+  /* font-weights */
+  --font-weight-heading: 600;
+  --font-weight-normal-heading: 400;
+  --font-weight-light-heading: 200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+main {
+  min-height: calc(100vh - 76px - 50px);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: max-content;
+
+  padding: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-weight: var(--font-weight-heading);
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.blue-button {
+  padding: var(--btn-padding);
+  border: none;
+  border-radius: 24px;
+  min-height: 48px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: var(--font-weight-heading);
+  font-size: var(--x-small-size);
+  text-align: center;
+  background: var(--blue-color);
+}
+
+.blue-button:hover {
+  box-shadow: 0 0 1px var(--blue-hover-color);
+  background-color: var(--blue-hover-color);
+}
+
+.blue-border-button {
+  padding: var(--btn-padding);
+  border: 1px solid var(--blue-color);
+  min-height: 48px;
+  border-radius: 24px;
+  cursor: pointer;
+  color: var(--blue-color);
+  font-weight: var(--font-weight-heading);
+  font-size: var(--x-small-size);
+  text-align: center;
+}
+
+.blue-border-button:hover {
+  background-color: #0a66c211;
+}
+
+.transparent-button {
+  padding: var(--btn-padding);
+  min-height: 48px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  color: var(--grey-dark-color);
+  font-weight: var(--font-weight-heading);
+  font-size: var(--x-small-size);
+  text-align: center;
+}
+
+.transparent-button:hover {
+  background-color: var(--light-bluish-shade);
+  color: var(--grey-deep-dark-color);
+}
+
+.grey-border-button {
+  min-height: 48px;
+  padding: var(--btn-padding);
+  border: 1px solid var(--grey-light-color);
+  border-radius: 24px;
+  cursor: pointer;
+  color: var(--grey-light-color);
+  font-weight: var(--font-weight-heading);
+  font-size: var(--x-small-size);
+  text-align: center;
+}
+
+.grey-border-button:hover {
+  background: rgba(0, 0, 0, 0.06);
+}

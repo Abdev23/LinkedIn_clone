@@ -1,0 +1,217 @@
+
+/* 
+========
+MAIN CSS
+========
+*/
+
+@import '../../index.css';
+
+/* Main section */
+.registration-container {
+  padding-top: 40px;
+  width: 100%;
+}
+
+.registration-section {
+  width: 55%;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: self-start;
+  z-index: 1;
+}
+
+.registration-section h1 {
+  font-size: var(--large-size);
+  font-weight: var(--font-weight-light-heading);
+  color: var(--brown-light-color);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.registration-image {
+  width: 700px;
+  height: 560px;
+  flex-grow: 1;
+  z-index: 1;
+}
+
+.registration-section form {
+  width: 408px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.email-box {
+  margin-top: 12px;
+  height: 96px;
+}
+
+.email-input-box {
+  width: 100%;
+  height: 55px;
+  padding: 14px 16px;
+  border: 1px solid var(--grey-light-color);
+  border-radius: 4px;
+}
+
+.email-input-box:hover {
+  background: var(--light-bluish-shade);
+  border: 2px solid black;
+}
+
+.email-input-box input {
+  outline: none;
+  font-size: var(--x-small-size);
+  font-weight: var(--font-weight-normal-heading);
+  width: 100%;
+  background: transparent;
+  height: 100%;
+  border: none;
+}
+
+.password-box {
+  margin-top: 12px;
+  height: 96px;
+}
+
+.password-input-box {
+  width: 100%;
+  height: 55px;
+  border: 1px solid var(--grey-light-color);
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+
+.password-input-box:hover {
+  background: var(--light-bluish-shade);
+  border: 2px solid black;
+}
+
+.password-input-box input {
+  flex-grow: 1;
+  margin-right: 8px;
+  font-size: var(--x-small-size);
+  font-weight: var(--font-weight-normal-heading);
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+.password-input-box p {
+  font-weight: var(--font-weight-heading);
+  color: var(--blue-color);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.forget-password {
+  display: inline-block;
+  font-size: var(--x-small-size);
+  font-weight: var(--font-weight-heading);
+  color: var(--blue-color);
+  margin-block: 16px;
+}
+
+.input-section label {
+  display: inline-block;
+  font-size: var(--xs-small-size);
+  font-weight: var(--font-weight-heading);
+  color: var(--grey-light-color);
+  margin-bottom: 8px;
+  line-height: 21px;
+}
+
+.sign-in-btn {
+  width: 100%;
+  margin-block: 8px;
+}
+
+.btn-division-or {
+  display: flex;
+  width: 100%;
+  padding-block: 16px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-division-or span {
+  display: inline-block;
+  height: 20px;
+  padding-inline: 10px;
+  color: var(--grey-light-color);
+  font-size: var(--xs-small-size);
+}
+
+.btn-division-or::before {
+  background-color: var(--grey-light-color);
+  width: 50%;
+  height: .1px;
+  content: "";
+}
+
+.btn-division-or::after {
+  background-color: var(--grey-light-color);
+  width: 50%;
+  height: .1px;
+  content: "";
+}
+
+.google-sign-in-btn {
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.google-sign-in-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.new-user-sign-up-btn {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .registration-container {
+    padding-top: 40;
+    padding-inline: 16px;
+    width: 100%;
+  }
+  .registration-section {
+    padding-right: 42px;
+  }
+}
+
+@media screen and (max-width: 767px)
+{
+  .registration-container {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    padding-inline: 16px;
+  }
+  .registration-section {
+    width: 100%;
+  }
+  .registration-section h1 {
+    font-size: 32px;
+    font-weight: 300;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+  }
+  .registration-image {
+    width: 374px;
+    height: 214px;
+  }
+  .registration-section form {
+    width: 100%;
+  }
+}
